@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "app-tecnica",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - app-tecnica",
+			"detail": "ng build"
+		}
+	]
+}

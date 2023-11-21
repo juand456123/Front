@@ -1,0 +1,43 @@
+<div class="register">
+    <form class="custom-form" method="post">
+      <h1>Registro</h1>
+      <input
+        type="text"  
+        [(ngModel)]="Nombres"        
+        name="Nombres"
+        placeholder="Nombres"
+        required="required"
+      />
+      <input
+        type="text"
+        [(ngModel)]="Apellidos"          
+        name="Apellidos"
+        placeholder="Apellidos"
+        required="required"
+      />
+      <select name="TipoIdentificacion" (select)="0"  [(ngModel)]="TipoIdentificacion"  >
+        <option value="">---SELECIONE---</option>
+        <option value="CC">Cedula de ciudadania</option>
+        <option value="TI">Tarjeta de identidad</option>
+        <option value="DNI">Documento nacional de identidad</option>
+        <option value="CI">Cedula de identidad</option>
+    </select> 
+      <input
+        type="text"   
+        [(ngModel)]="NumeroIdentificacion"       
+        name="NumeroIdentificacion"
+        placeholder="NumeroIdentificacion"
+        required="required"
+      />
+      <input
+        type="email"  
+        [(ngModel)]="Email"        
+        name="email"
+        placeholder="Email"
+        required="required"
+      />
+      
+      <button type="submit"  (click)="register()" >Registrar</button>
+    </form>
+  </div>
+  
